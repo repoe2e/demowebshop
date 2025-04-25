@@ -21,4 +21,9 @@ public class Navegador extends Drivers {
 		}
 	}
 
+	public static void fecharNavegador() {
+		driver.quit();
+		
+	}
+
 }
