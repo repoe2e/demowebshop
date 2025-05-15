@@ -1,5 +1,5 @@
 package tricentis.demowebshop.testes;
 
-public class Login {
+public class RecuperarEmailTest {
 
 }

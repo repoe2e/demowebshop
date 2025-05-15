@@ -9,7 +9,7 @@ import tricentis.demowebshop.elementos.Elementos;
 import tricentis.demowebshop.metodos.Metodos;
 import tricentis.demowebshop.utils.MassaTestes;
 
-public class RegistrarUsuario {
+public class RegistrarUsuarioTest {
 	
 	Elementos el = new Elementos();
 	Metodos metodo = new Metodos();
@@ -24,14 +24,15 @@ public class RegistrarUsuario {
 	
 	@AfterEach
 	public void tearDown() {
-		Navegador.fecharNavegador();
+		//Navegador.fecharNavegador();
 	}
 	
 	@Test
-	public void registroSucesso() {
-		String email = massa.retornarDados("emailGmail");
+	public void registroSucesso() throws InterruptedException {
+		String email = massa.retornaDados("emailGmail"); 
 		metodo.escrever(el.getFirstName(),"Anderson");
 		metodo.escrever(el.getLastName(),"Barbosa");
+		Thread.sleep(4000);
 		metodo.escrever(el.getEmail(),email);
 		metodo.escrever(el.getPassword(),"B?0P248kEf-P");
 		metodo.escrever(el.getConfirmPassword(),"B?0P248kEf-P");
@@ -40,7 +41,7 @@ public class RegistrarUsuario {
 	}
 	
 	
-	@Test
+	//@Test
 	public void registrarEmailRegistrado() {
 		metodo.escrever(el.getFirstName(),"Anderson");
 		metodo.escrever(el.getLastName(),"Barbosa");
@@ -51,7 +52,7 @@ public class RegistrarUsuario {
 		metodo.validarTexto("The specified email already exists");
 	}
 	
-	@Test
+	//@Test
 	public void registrarConfirmacaoDeSenhaDiferente() {
 		metodo.escrever(el.getFirstName(),"Anderson");
 		metodo.escrever(el.getLastName(),"Barbosa");

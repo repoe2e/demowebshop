@@ -4,12 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.opentest4j.AssertionFailedError;
-
 import tricentis.demowebshop.drivers.Drivers;
 
 public class Metodos extends Drivers {
@@ -59,7 +57,7 @@ public class Metodos extends Drivers {
 			throw new NoSuchElementException("Elemento não encontrado " + locator);
 		}
 	}
-	
+
 	public void esperarElementoVisivel(By locator, int segundos) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(segundos));
@@ -67,7 +65,5 @@ public class Metodos extends Drivers {
 		} catch (Exception e) {
 			throw new NoSuchElementException("Elemento não encontrado " + locator);
 		}
-	}
-	
-
+	}	
 }
