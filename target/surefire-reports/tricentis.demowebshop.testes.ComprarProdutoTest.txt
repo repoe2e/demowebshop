@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: tricentis.demowebshop.testes.ComprarProdutoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.74 s <<< FAILURE! -- in tricentis.demowebshop.testes.ComprarProdutoTest
+tricentis.demowebshop.testes.ComprarProdutoTest.comprarProduto -- Time elapsed: 16.71 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.trim()" because "subCategoria" is null
+	at tricentis.demowebshop.pages.HomePage.headerMenu(HomePage.java:42)
+	at tricentis.demowebshop.testes.ComprarProdutoTest.comprarProduto(ComprarProdutoTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

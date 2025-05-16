@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tricentis.demowebshop.testes.LoginTest" time="87.839" tests="6" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tricentis.demowebshop.testes.ComprarProdutoTest" time="16.742" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,41 +59,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="senhaBranco" classname="tricentis.demowebshop.testes.LoginTest" time="14.142">
-    <system-err><![CDATA[mai. 15, 2025 10:24:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 136, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 136
-]]></system-err>
-  </testcase>
-  <testcase name="senhaInvalida" classname="tricentis.demowebshop.testes.LoginTest" time="14.798">
-    <system-err><![CDATA[mai. 15, 2025 10:25:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 136, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 136
-]]></system-err>
-  </testcase>
-  <testcase name="emailForaDoPadrao" classname="tricentis.demowebshop.testes.LoginTest" time="12.908">
-    <system-err><![CDATA[mai. 15, 2025 10:25:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 136, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 136
-]]></system-err>
-  </testcase>
-  <testcase name="emailInexistente" classname="tricentis.demowebshop.testes.LoginTest" time="13.165">
-    <system-err><![CDATA[mai. 15, 2025 10:25:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 136, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 136
-]]></system-err>
-  </testcase>
-  <testcase name="emailBranco" classname="tricentis.demowebshop.testes.LoginTest" time="13.692">
-    <system-err><![CDATA[mai. 15, 2025 10:25:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find an exact match for CDP version 136, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 136
-]]></system-err>
-  </testcase>
-  <testcase name="loginSucesso" classname="tricentis.demowebshop.testes.LoginTest" time="19.121">
-    <failure message="Texto em branco ou errado!" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Texto em branco ou errado!
-	at tricentis.demowebshop.metodos.Metodos.validarTexto(Metodos.java:58)
-	at tricentis.demowebshop.pages.HomePage.login(HomePage.java:21)
-	at tricentis.demowebshop.testes.LoginTest.loginSucesso(LoginTest.java:28)
+  <testcase name="comprarProduto" classname="tricentis.demowebshop.testes.ComprarProdutoTest" time="16.709">
+    <error message="Cannot invoke &quot;String.trim()&quot; because &quot;subCategoria&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "String.trim()" because "subCategoria" is null
+	at tricentis.demowebshop.pages.HomePage.headerMenu(HomePage.java:42)
+	at tricentis.demowebshop.testes.ComprarProdutoTest.comprarProduto(ComprarProdutoTest.java:23)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
-    <system-err><![CDATA[mai. 15, 2025 10:26:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+]]></error>
+    <system-err><![CDATA[mai. 15, 2025 10:24:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTÊNCIA: Unable to find an exact match for CDP version 136, returning the closest version; found: 135; Please update to a Selenium version that supports CDP version 136
 ]]></system-err>
   </testcase>

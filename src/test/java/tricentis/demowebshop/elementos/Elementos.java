@@ -24,5 +24,10 @@ public class Elementos {
 	  */
 	 private By menuLogin = By.xpath("//a[@href='/login']");
 	 private By btnLogin = By.xpath("//input[@class='button-1 login-button']");
+	
+	 
+	 
+	 //Elementos cliente logado
+	  private By menuLogout = By.xpath("//a[@href='/logout']");
 	 
 }
