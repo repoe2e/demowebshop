@@ -2,13 +2,22 @@ package tricentis.demowebshop.metodos;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.NoSuchElementException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NotFoundException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.opentest4j.AssertionFailedError;
+
 import tricentis.demowebshop.drivers.Drivers;
 
 public class Metodos extends Drivers {
@@ -90,5 +99,9 @@ public class Metodos extends Drivers {
 		return driver.switchTo().alert().getText();
 
 	}
+	
+	
+	
+	
 
 }

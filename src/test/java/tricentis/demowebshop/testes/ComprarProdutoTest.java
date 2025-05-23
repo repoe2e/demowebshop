@@ -20,7 +20,9 @@ public class ComprarProdutoTest {
 	
 	@Test
 	public void comprarProduto() {
-		home.headerMenu("Computer",null);
+		home.headerMenu("Computer");
+		home.addCarrinho("Desk","1");
+		home.validarCarrinho();
 	}
 
 
